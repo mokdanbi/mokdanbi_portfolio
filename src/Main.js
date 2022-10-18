@@ -106,11 +106,11 @@ const Main = () => {
                   last page
                 </div>
               </div>
-            </ReactFullpage.Wrapper>
+            </ReactFullpage.Wrapper >
           );
         }}
       />
-    </div>
+    </div >
   )
 }
 
