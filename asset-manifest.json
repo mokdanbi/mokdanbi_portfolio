@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/mokdanbi_portfolio/static/css/main.c8dcb14e.css",
+    "main.css": "/mokdanbi_portfolio/static/css/main.c60a191f.css",
     "main.js": "/mokdanbi_portfolio/static/js/main.f7694ce7.js",
     "index.html": "/mokdanbi_portfolio/index.html",
-    "main.c8dcb14e.css.map": "/mokdanbi_portfolio/static/css/main.c8dcb14e.css.map",
+    "main.c60a191f.css.map": "/mokdanbi_portfolio/static/css/main.c60a191f.css.map",
     "main.f7694ce7.js.map": "/mokdanbi_portfolio/static/js/main.f7694ce7.js.map"
   },
   "entrypoints": [
-    "static/css/main.c8dcb14e.css",
+    "static/css/main.c60a191f.css",
     "static/js/main.f7694ce7.js"
   ]
 }
