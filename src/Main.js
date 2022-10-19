@@ -59,32 +59,6 @@ const Main = () => {
                       </Animated>
                     </div>
                   </div>
-                  {/* <div className="title">
-                    <p>길을 찾아가는 개발자</p>
-                    <ul>
-                      <li>
-                        <Animated animationIn="bounceInLeft" isVisible={true}>
-                          <div>
-                            More
-                          </div>
-                        </Animated>
-                      </li>
-                      <li>
-                        <Animated animationIn="lightSpeedIn" isVisible={true} animationInDelay="500">
-                          <div>
-                            Develop
-                          </div>
-                        </Animated>
-                      </li>
-                      <li>
-                        <Animated animationIn="bounceInUp" isVisible={true} animationInDelay="1000">
-                          <div>
-                            Balance
-                          </div>
-                        </Animated>
-                      </li>
-                    </ul>
-                  </div> */}
                 </div>
               </div>
               {

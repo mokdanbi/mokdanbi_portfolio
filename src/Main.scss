@@ -77,52 +77,6 @@
   .inner {
     position: relative;
 
-    .title {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 1107px;
-      height: 343px;
-      background: url(../public/images/mokdanbi.png) no-repeat;
-      background-size: 80%;
-      background-position: center center;
-
-      p {
-        position: absolute;
-        top: -10px;
-        left: 110px;
-        font-size: 30px;
-        font-weight: 800;
-      }
-
-      ul {
-        font-size: 33px;
-        font-weight: 900;
-
-        li {
-          position: absolute;
-          color: #333;
-
-          &:nth-child(1) {
-            top: 163px;
-            left: 290px;
-          }
-
-          &:nth-child(2) {
-            bottom: 48px;
-            left: 440px;
-          }
-
-          &:nth-child(3) {
-            top: 50px;
-            right: 223px;
-            writing-mode: vertical-lr;
-          }
-        }
-      }
-    }
-
     .pf_title {
       position: absolute;
       top: 50%;
@@ -139,6 +93,36 @@
       background: #000;
       color: #fff;
       margin: 0 0 10px 0;
+
+      &::before {
+        content: "";
+        position: absolute;
+        right: 630px;
+        top: 25px;
+        width: 0;
+        height: 0;
+        border-bottom: 2px dashed #fff;
+        transition: 0.5s 0.5s ease-in;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 630px;
+        top: 25px;
+        width: 0;
+        height: 0;
+        border-bottom: 2px dashed #fff;
+        transition: 0.5s 0.5s ease-in;
+      }
+    }
+
+    .pf_title:hover .pf_txt::before {
+      width: 350px;
+    }
+
+    .pf_title:hover .pf_txt::after {
+      width: 350px;
     }
 
     .sqw {
@@ -156,6 +140,7 @@
 
     .tpq {
       max-width: 0;
+      // max-width: 1em;
       opacity: 0;
       transition: 0.5s ease-in;
     }
