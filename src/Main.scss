@@ -73,6 +73,7 @@
 }
 
 .title_page {
+  position: relative;
 
   .inner {
     position: relative;
@@ -132,10 +133,9 @@
     }
 
     .text {
-      color: 333;
+      color: #000;
       font-size: 80px;
       font-weight: 900;
-
     }
 
     .tpq {
@@ -143,6 +143,7 @@
       // max-width: 1em;
       opacity: 0;
       transition: 0.5s ease-in;
+      color: #333;
     }
 
     .pf_title:hover .tpq {
@@ -170,6 +171,156 @@
       opacity: 0;
 
     }
+  }
+
+  .footprint_left {
+    position: absolute;
+    right: 40px;
+    bottom: 60px;
+    z-index: 999;
+    opacity: 0.1;
+    animation: 3s fprint steps(1, start) infinite;
+
+    img {
+      height: 60px;
+    }
+  }
+
+  .footprint_right {
+    position: absolute;
+    right: 40px;
+    bottom: 60px;
+    z-index: 999;
+    opacity: 0.1;
+    animation: 3s fprint_v steps(1, start) infinite;
+
+    img {
+      height: 60px;
+    }
+  }
+
+  .circle {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 0 0 -111px;
+    width: 10px;
+    height: 10px;
+    background: #000;
+    border-radius: 50%;
+    -webkit-animation: whirl-bounce 0.5s cubic-bezier(0.6, 0.3, 0.8, 0.5) alternate infinite;
+      animation: whirl-bounce 0.5s cubic-bezier(0.6, 0.3, 0.8, 0.5) alternate infinite;
+      -webkit-transform-origin: bottom center;
+      transform-origin: bottom center;
+  }
+}
+
+@-webkit-keyframes whirl-bounce {
+  0% {
+    -webkit-transform: translate(0, -150%) scaleX(1) scaleY(1);
+    transform: translate(0, -150%) scaleX(1) scaleY(1);
+  }
+
+  100% {
+    -webkit-transform: translate(0, 150%) scaleX(1.1) scaleY(0.9);
+    transform: translate(0, 150%) scaleX(1.1) scaleY(0.9);
+  }
+}
+
+@keyframes whirl-bounce {
+  0% {
+    -webkit-transform: translate(0, -150%) scaleX(1) scaleY(1);
+    transform: translate(0, -150%) scaleX(1) scaleY(1);
+  }
+
+  100% {
+    -webkit-transform: translate(0, 150%) scaleX(1.1) scaleY(0.9);
+    transform: translate(0, 150%) scaleX(1.1) scaleY(0.9);
+  }
+}
+
+@keyframes fprint {
+  0% {}
+
+  10% {
+    transform: translate(40px, -60px) scaleX(-1);
+  }
+
+  20% {
+    transform: translate(0px, -120px);
+  }
+
+  30% {
+    transform: translate(40px, -180px) scaleX(-1);
+  }
+
+  40% {
+    transform: translate(0px, -240px);
+  }
+
+  50% {
+    transform: translate(40px, -300px) scaleX(-1);
+  }
+
+  60% {
+    transform: translate(0px, -360px);
+  }
+
+  70% {
+    transform: translate(40px, -420px) scaleX(-1);
+  }
+
+  80% {
+    transform: translate(0px, -480px);
+  }
+
+  90% {
+    transform: translate(40px, -540px) scaleX(-1);
+  }
+
+  100% {
+    transform: translate(0px, -600px);
+  }
+}
+
+@keyframes fprint_v {
+  0% {}
+
+  20% {
+    transform: translate(40px, -60px) scaleX(-1);
+  }
+
+  30% {
+    transform: translate(0px, -120px);
+  }
+
+  40% {
+    transform: translate(40px, -180px) scaleX(-1);
+  }
+
+  50% {
+    transform: translate(0px, -240px);
+  }
+
+  60% {
+    transform: translate(40px, -300px) scaleX(-1);
+  }
+
+  70% {
+    transform: translate(0px, -360px);
+  }
+
+  80% {
+    transform: translate(40px, -420px) scaleX(-1);
+  }
+
+  90% {
+    transform: translate(0px, -480px);
+  }
+
+  100% {
+    transform: translate(40px, -540px) scaleX(-1);
   }
 }
 

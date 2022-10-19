@@ -30,6 +30,7 @@ const Main = () => {
                   <div className="pf_title">
                     <div className="pf_txt">
                       길을 찾아가는 개발자
+                      <div className="circle"></div>
                     </div>
                     <div class="text sqw">
                       <span>M</span>
@@ -60,6 +61,13 @@ const Main = () => {
                     </div>
                   </div>
                 </div>
+                {/* <div className="footprint_left">
+                  <img src={process.env.PUBLIC_URL + "/images/foot.png"} alt="" />
+                </div>
+                <div className="footprint_right">
+                  <img src={process.env.PUBLIC_URL + "/images/foot.png"} alt="" />
+                </div> */}
+                
               </div>
               {
                 portfolio.map((it, idx) => {
