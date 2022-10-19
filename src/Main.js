@@ -1,6 +1,7 @@
 import ReactFullpage from '@fullpage/react-fullpage'
 import React, { useState } from 'react'
 import { portfolio } from './Data';
+import { GrCursor } from 'react-icons/gr';
 import { Animated } from "react-animated-css";
 import './Main.scss';
 
@@ -26,7 +27,39 @@ const Main = () => {
                   2022 Mok dan-bi Portfolio
                 </div>
                 <div className="inner">
-                  <div className="title">
+                  <div className="pf_title">
+                    <div className="pf_txt">
+                      길을 찾아가는 개발자
+                    </div>
+                    <div class="text sqw">
+                      <span>M</span>
+                      <span class="tpq">o</span>
+                      <span class="tpq">r</span>
+                      <span class="tpq">e</span>
+                      <span class="tpq blk">,</span>
+                      <span>D</span>
+                      <span class="tpq">e</span>
+                      <span class="tpq">v</span>
+                      <span class="tpq">e</span>
+                      <span class="tpq">l</span>
+                      <span class="tpq">o</span>
+                      <span class="tpq">p</span>
+                      <span class="tpq blk">,</span>
+                      <span>B</span>
+                      <span class="tpq">a</span>
+                      <span class="tpq">l</span>
+                      <span class="tpq">a</span>
+                      <span class="tpq">n</span>
+                      <span class="tpq">c</span>
+                      <span class="tpq">e</span>
+                    </div>
+                    <div className="cs_icon">
+                      <Animated animationIn="flash" isVisible={true}>
+                        <GrCursor />
+                      </Animated>
+                    </div>
+                  </div>
+                  {/* <div className="title">
                     <p>길을 찾아가는 개발자</p>
                     <ul>
                       <li>
@@ -51,7 +84,7 @@ const Main = () => {
                         </Animated>
                       </li>
                     </ul>
-                  </div>
+                  </div> */}
                 </div>
               </div>
               {
@@ -110,6 +143,7 @@ const Main = () => {
           );
         }}
       />
+
     </div >
   )
 }
