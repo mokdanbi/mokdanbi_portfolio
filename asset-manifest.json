@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/mokdanbi_portfolio/static/css/main.7deee6ef.css",
+    "main.js": "/mokdanbi_portfolio/static/js/main.d9e12f78.js",
+    "index.html": "/mokdanbi_portfolio/index.html",
+    "main.7deee6ef.css.map": "/mokdanbi_portfolio/static/css/main.7deee6ef.css.map",
+    "main.d9e12f78.js.map": "/mokdanbi_portfolio/static/js/main.d9e12f78.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7deee6ef.css",
+    "static/js/main.d9e12f78.js"
+  ]
+}
