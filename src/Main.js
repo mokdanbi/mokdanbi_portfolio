@@ -1,7 +1,7 @@
 import ReactFullpage from '@fullpage/react-fullpage'
 import React, { useState } from 'react'
 import { portfolio } from './Data';
-import { GrCursor } from 'react-icons/gr';
+import { GrCursor, GrPerformance, GrPower } from 'react-icons/gr';
 import { Animated } from "react-animated-css";
 import './Main.scss';
 
@@ -14,6 +14,26 @@ const Main = () => {
   return (
     <div className='PF'>
       <div className='num'>{portfolio[num - 1]?.number}</div>
+      <nav className='gnb'>
+        <a href={`#title`}>
+          <GrPower className='top' />
+        </a>
+        <ul>
+          {
+            portfolio.map((it, idx) => {
+              return (
+                <li key={idx} className={it.id === num ? "on" : ""}>
+                  <a href={`#${it.number}`}>&nbsp;{it.id}</a>
+                </li>
+              )
+            })
+          }
+        </ul>
+        <a href={`#footer`}>
+          <GrPerformance className='bottom' />
+        </a>
+      </nav>
+
       <ReactFullpage
         // licenseKey={'YOUR_KEY_HERE'}
         scrollingSpeed={1000}
@@ -64,8 +84,8 @@ const Main = () => {
                 </div>
 
                 <div className="blobs">
-                  <svg viewBox="0 0 800 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" width="100%" id="blobSvg">
-                    <g transform="translate(184.14469146728516, -13.9007568359375)">
+                  <svg viewBox="0 0 500 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" width="700px" height="100%" id="blobSvg">
+                    <g transform="translate(0, 0)">
                       <path fill="#f1f1f1">
                         <animate attributeName="d"
                           dur="10000ms"
