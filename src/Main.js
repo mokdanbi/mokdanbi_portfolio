@@ -1,5 +1,5 @@
 import ReactFullpage from '@fullpage/react-fullpage'
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { portfolio } from './Data';
 import { GrCursor, GrPerformance, GrPower } from 'react-icons/gr';
 import { Animated } from "react-animated-css";
@@ -9,10 +9,45 @@ import './Main.scss';
 // portfolio 배열에서 number만 빼서 PN 배열을 만듦
 const PN = portfolio.map(it => it = it.number);
 
+const Cover = ({ on, setOn }) => {
+  const cover = useRef(null);
+  const wheelStop = e => {
+    e.stopPropagation();
+  }
+  useEffect(() => {
+    cover.current.addEventListener('wheel', wheelStop);
+  }, [])
+  return (
+    <div className={`Cover ${on ? "on" : ""}`} ref={cover}>
+      <div className="inner">
+        <h2>INDEX</h2>
+        <ul>
+          <li onClick={() => setOn(!on)}><a href={`#title`}>Title<span>p0.</span></a></li>
+          {
+            portfolio.map((it, idx) => {
+              return (
+                <li key={idx} onClick={() => setOn(!on)}>
+                  <a href={`#${it.number}`}>{it.title}<span>p{it.id}.</span></a>
+                </li>
+              )
+            })
+          }
+          <li onClick={() => setOn(!on)}><a href={`#footer`}>About me<span>p10.</span></a></li>
+        </ul>
+      </div>
+    </div>
+  )
+}
+
 const Main = () => {
   const [num, setNum] = useState(1);
+  const [on, setOn] = useState(false);
   return (
     <div className='PF'>
+      <Cover on={on} setOn={setOn} />
+      <button className={`btn ${on ? "on" : ""}`} onClick={() => setOn(!on)}>
+        <span>cover open</span>
+      </button>
       <div className='num'>{portfolio[num - 1]?.number}</div>
       <nav className='gnb'>
         <a href={`#title`}>

@@ -16,6 +16,251 @@
   z-index: 999;
 }
 
+.btn {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  transform: translate(50%, -50%);
+  z-index: 1000;
+  font-size: 0;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 1px dashed #ccc;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 6px;
+    right: 6px;
+    height: 4px;
+    background: #ccc;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 8px;
+    left: 6px;
+    right: 6px;
+    height: 4px;
+    background: #ccc;
+  }
+
+  &.on::before {
+    display: none;
+  }
+
+  &.on::after {
+    display: none;
+  }
+
+  span::before,
+  span::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 6px;
+    right: 6px;
+    height: 4px;
+    background: #ccc;
+    transition: 0.3s;
+  }
+
+  &.on span::before {
+    transform: rotate(45deg);
+  }
+
+  &.on span::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.Cover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  z-index: 1000;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+
+  &.on {
+    height: 100vh;
+  }
+
+  // 점선
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px dashed #ddd;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    border-top: 1px dashed #ddd;
+  }
+
+  .inner {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100px;
+      height: 100%;
+      border-right: 1px dashed #ddd;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100px;
+      height: 100%;
+      border-left: 1px dashed #ddd;
+    }
+  }
+
+  h2 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 45px;
+    font-weight: 800;
+    line-height: 100px;
+  }
+
+  ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    >li {
+      font-size: 18px;
+      font-weight: 500;
+      border-bottom: 1px dashed #ddd;
+      width: 800px;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      a {
+        position: relative;
+        display: block;
+        padding: 20px 0 20px 30px;
+        margin-left: 150px;
+        border-left: 1px dashed #ddd;
+      }
+
+      span {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 10px;
+        font-size: 14px;
+        font-weight: 800;
+        padding: 0 20px 0 0;
+      }
+
+      &:nth-child(1) {
+        position: relative;
+
+        &::before {
+          content: "Intro";
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          left: 10px;
+          font-size: 14px;
+          font-weight: 600;
+          color: #5894cc;
+        }
+      }
+
+      &:nth-child(2) {
+        position: relative;
+
+        &::before {
+          content: "Standard Web";
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          left: 10px;
+          font-size: 14px;
+          font-weight: 600;
+          color: #5894cc;
+        }
+      }
+
+      &:nth-child(5) {
+        position: relative;
+
+        &::before {
+          content: "Responsive Web";
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          left: 10px;
+          font-size: 14px;
+          font-weight: 600;
+          color: #5894cc;
+        }
+      }
+
+      &:nth-child(9) {
+        position: relative;
+
+        &::before {
+          content: "React Web";
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          left: 10px;
+          font-size: 14px;
+          font-weight: 600;
+          color: #5894cc;
+        }
+      }
+
+      &:nth-child(11) {
+        position: relative;
+
+        &::before {
+          content: "Outro";
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          left: 10px;
+          font-size: 14px;
+          font-weight: 600;
+          color: #5894cc;
+        }
+      }
+    }
+  }
+}
+
 .gnb {
   position: fixed;
   top: 50%;
@@ -365,6 +610,7 @@
       :hover {
         background: #666;
         color: #fff;
+        transition: 0.3s;
       }
     }
 
