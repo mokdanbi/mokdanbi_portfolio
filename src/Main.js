@@ -4,6 +4,8 @@ import { portfolio } from './Data';
 import { GrCursor, GrPerformance, GrPower } from 'react-icons/gr';
 import { Animated } from "react-animated-css";
 import './Main.scss';
+import './Tablet.scss';
+import './Mobile.scss';
 
 
 // portfolio 배열에서 number만 빼서 PN 배열을 만듦
@@ -206,7 +208,7 @@ const Main = () => {
                           <dl className='lt'>
                             <dt>Education</dt>
                             <dd>경성대학교 디지털미디어학부 졸업</dd>
-                            <dd>웹 콘텐츠 UI/UX디자인 과정 수료<br />
+                            <dd>웹 콘텐츠 UI/UX 디자인 과정 수료<br />
                               (나래디자인학원)</dd>
                             <dd>웹 디자이너 2년 근무</dd>
                             <dd>React 활용 프론트엔드 개발자 양성과정 수료<br />
@@ -224,7 +226,7 @@ const Main = () => {
                         </li>
                         <li>
                           <dl className='lt'>
-                            <dt>Skill &amp; Ability</dt>
+                            <dt>Skill&amp;Ability</dt>
                             <dd>html / css / javascript</dd>
                             <dd>jQuery</dd>
                             <dd>React</dd>
