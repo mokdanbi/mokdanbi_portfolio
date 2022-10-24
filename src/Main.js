@@ -152,8 +152,61 @@ const Main = () => {
                 })
               }
               <div className="section last_page">
+                <div className="subject">
+                  2022 Mok dan-bi Portfolio
+                </div>
                 <div className="inner">
-                  last page
+                  <div className="content">
+                    <div className="profile">
+                      <ul>
+                        <li>
+                          <dl className='ft'>
+                            <dt>Profile</dt>
+                            <dd>목단비 / Mok dan-bi</dd>
+                            <dd><a href="tel:010-2640-1940">010. 2640. 1940</a></dd>
+                            <dd><a href="mailto:l26fz@naver.com">l26fz@naver.com</a></dd>
+                          </dl>
+                        </li>
+                        <li>
+                          <dl className='lt'>
+                            <dt>Education</dt>
+                            <dd>경성대학교 디지털미디어학부 졸업</dd>
+                            <dd>웹 콘텐츠 UI/UX디자인 과정 수료<br />
+                              (나래디자인학원)</dd>
+                            <dd>웹 디자이너 2년 근무</dd>
+                            <dd>React 활용 프론트엔드 개발자 양성과정 수료<br />
+                              (그린컴퓨터아카데미)</dd>
+                          </dl>
+                        </li>
+                      </ul>
+                      <ul>
+                        <li>
+                          <dl className='ft'>
+                            <dt>Certificate</dt>
+                            <dd>GTQ 1급</dd>
+                            <dd>운전면허 2종 보통</dd>
+                          </dl>
+                        </li>
+                        <li>
+                          <dl className='lt'>
+                            <dt>Skill &amp; Ability</dt>
+                            <dd>html / css / javascript</dd>
+                            <dd>jQuery</dd>
+                            <dd>React</dd>
+                            <dd>Photoshop</dd>
+                            <dd>Illustrator</dd>
+                            <dd>Premiere Pro</dd>
+                          </dl>
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="danbi">
+                      <div className="dbtxt">
+                        <p>더 발전하기 위해 길을 찾아가는 개발자,</p>
+                        <strong>목단비</strong>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </ReactFullpage.Wrapper >
