@@ -1,7 +1,7 @@
 import ReactFullpage from '@fullpage/react-fullpage'
 import React, { useEffect, useRef, useState } from 'react'
 import { portfolio } from './Data';
-import { GrCursor, GrPerformance, GrPower } from 'react-icons/gr';
+import { GrCertificate, GrCursor, GrOrganization, GrPerformance, GrPower, GrToast, GrTools, GrUserFemale } from 'react-icons/gr';
 import { Animated } from "react-animated-css";
 import './Main.scss';
 import './Tablet.scss';
@@ -91,8 +91,7 @@ const Main = () => {
                       <div className="circle"></div>
                     </div>
                     <div class="text sqw">
-                      <span>M</span>
-                      <span class="tpq">o</span>
+                      <span>M</span><span class="tpq">o</span>
                       <span class="tpq">r</span>
                       <span class="tpq">e</span>
                       <span class="tpq blk">,</span>
@@ -195,47 +194,64 @@ const Main = () => {
                 <div className="inner">
                   <div className="content">
                     <div className="profile">
-                      <ul>
-                        <li>
-                          <dl className='ft'>
-                            <dt>Profile</dt>
-                            <dd>목단비 / Mok dan-bi</dd>
-                            <dd><a href="tel:010-2640-1940">010. 2640. 1940</a></dd>
-                            <dd><a href="mailto:l26fz@naver.com">l26fz@naver.com</a></dd>
-                          </dl>
-                        </li>
-                        <li>
-                          <dl className='lt'>
-                            <dt>Education</dt>
-                            <dd>경성대학교 디지털미디어학부 졸업</dd>
-                            <dd>웹 콘텐츠 UI/UX 디자인 과정 수료<br />
-                              (나래디자인학원)</dd>
-                            <dd>웹 디자이너 2년 근무</dd>
-                            <dd>React 활용 프론트엔드 개발자 양성과정 수료<br />
-                              (그린컴퓨터아카데미)</dd>
-                          </dl>
-                        </li>
-                      </ul>
-                      <ul>
-                        <li>
-                          <dl className='ft'>
-                            <dt>Certificate</dt>
-                            <dd>GTQ 1급</dd>
-                            <dd>운전면허 2종 보통</dd>
-                          </dl>
-                        </li>
-                        <li>
-                          <dl className='lt'>
-                            <dt>Skill&amp;Ability</dt>
-                            <dd>html / css / javascript</dd>
-                            <dd>jQuery</dd>
-                            <dd>React</dd>
-                            <dd>Photoshop</dd>
-                            <dd>Illustrator</dd>
-                            <dd>Premiere Pro</dd>
-                          </dl>
-                        </li>
-                      </ul>
+                      <table>
+                        <tr>
+                          <th>
+                            <GrUserFemale />
+                            <span>Profile</span>
+                          </th>
+                          <th>
+                            <GrCertificate />
+                            <span>Certificate</span>
+                          </th>
+                        </tr>
+                        <tr>
+                          <td>
+                            <dl>
+                              <dd>목단비 / Mok dan-bi</dd>
+                              <dd><a href="tel:010-2640-1940">010. 2640. 1940</a></dd>
+                              <dd><a href="mailto:l26fz@naver.com">l26fz@naver.com</a></dd>
+                            </dl>
+                          </td>
+                          <td>
+                            <dl>
+                              <dd>GTQ 1급</dd>
+                              <dd>운전면허 2종 보통</dd>
+                            </dl>
+                          </td>
+                        </tr>
+                        <tr className='tpline'>
+                          <th>
+                            <GrToast />
+                            <span>Education</span></th>
+                          <th>
+                            <GrTools />
+                            <span>Skill &amp; Ability</span>
+                          </th>
+                        </tr>
+                        <tr>
+                          <td>
+                            <dl>
+                              <dd>경성대학교 디지털미디어학부 졸업</dd>
+                              <dd>웹 콘텐츠 UI/UX 디자인 과정 수료<br />
+                                (나래디자인학원)</dd>
+                              <dd>웹 디자이너 2년 근무</dd>
+                              <dd>React 활용 프론트엔드 개발자 양성과정 수료<br />
+                                (그린컴퓨터아카데미)</dd>
+                            </dl>
+                          </td>
+                          <td>
+                            <dl>
+                              <dd>html / css / javascript</dd>
+                              <dd>jQuery</dd>
+                              <dd>React</dd>
+                              <dd>Photoshop</dd>
+                              <dd>Illustrator</dd>
+                              <dd>Premiere Pro</dd>
+                            </dl>
+                          </td>
+                        </tr>
+                      </table>
                     </div>
                     <div className="danbi">
                       <div className="dbtxt">

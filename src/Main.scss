@@ -150,16 +150,17 @@
   }
 
   ul {
+    padding: 100px 150px;
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 100%;
     transform: translate(-50%, -50%);
 
     >li {
       font-size: 18px;
       font-weight: 500;
       border-bottom: 1px dashed #ddd;
-      width: 800px;
 
       &:last-child {
         border-bottom: none;
@@ -601,12 +602,13 @@
     }
 
     .view {
-      font-size: 15px;
+      font-size: 14px;
       color: #666;
 
       a {
         padding: 10px 20px;
         border: 1px dashed #666;
+        white-space: nowrap;
       }
 
       :hover {
@@ -619,7 +621,8 @@
     >ul {
 
       >li {
-        line-height: 50px;
+        // line-height: 50px;
+        padding: 15px 70px;
         border-bottom: 1px dashed #ddd;
 
         &:first-child {
@@ -628,10 +631,10 @@
 
         span {
           display: inline-block;
-          margin: 0 0 0 70px;
+          // margin: 0 0 0 70px;
           font-size: 18px;
           font-weight: 700;
-          min-width: 100px;
+          min-width: 90px;
         }
 
         ol {
@@ -639,11 +642,10 @@
 
           li {
             display: inline-block;
-            width: 25px;
-            height: 25px;
+            width: 40px;
+            height: 13px;
             vertical-align: middle;
-            border-radius: 50%;
-            margin-right: 15px;
+            margin-right: 1px;
             font-size: 0;
             border: 1px solid #ddd;
           }
@@ -697,37 +699,36 @@
       justify-content: center;
       text-align: center;
 
-      ul {
-        width: 30%;
 
-        li {
+      // 수정
+      table {
+        width: 80%;
 
-          .ft {
-            min-height: 175px;
-            margin: 0 0 60px 0;
+        .tpline {
+          border-top: 1px dashed #ddd;
+        }
+
+        th {
+          padding: 30px;
+          font-size: 24px;
+
+          span {
+            display: inline-block;
+            font-size: 26px;
+            padding-left: 10px;
           }
+        }
 
-          .lt {
-            min-height: 240px;
-          }
+        td {
+          width: 50%;
+          padding-bottom: 50px;
+          line-height: 1.45;
+        }
 
-          dl {
-            border: 1px dashed #ddd;
-            padding: 20px;
-
-
-            dt {
-              font-size: 26px;
-              font-weight: 600;
-              margin: 0 0 20px 0;
-              padding: 0 0 20px 0;
-              border-bottom: 1px dashed #ddd;
-            }
-
-            dd {
-              font-size: 15px;
-              line-height: 1.45;
-            }
+        th,
+        td {
+          &:first-child {
+            border-right: 1px dashed #ddd;
           }
         }
       }
@@ -747,13 +748,15 @@
         border-top: 1px dashed #ddd;
         border-bottom: 1px dashed #ddd;
         padding: 20px;
-        width: 350px;
+        width: 100%;
         text-align: center;
+
 
         p {
           font-size: 18px;
           font-weight: 700;
           margin: 0 0 10px 0;
+          word-break: keep-all;
         }
 
         strong {
