@@ -153,6 +153,9 @@ const Main = () => {
                             <div className="screen">
                               <img src={it.src} alt={it.title} />
                             </div>
+                            <div className={it.type === "Responsive Web" ? "sr_res" : ""}>
+                              <div className={it.number}></div>
+                            </div>
                           </div>
                           <div className="desc">
                             <div>
