@@ -1,13 +1,17 @@
 {
   "files": {
-    "main.css": "/mokdanbi_portfolio/static/css/main.6ce377c5.css",
-    "main.js": "/mokdanbi_portfolio/static/js/main.fdcac57d.js",
+    "main.css": "/mokdanbi_portfolio/static/css/main.19c69709.css",
+    "main.js": "/mokdanbi_portfolio/static/js/main.8b7e2014.js",
+    "static/media/project08_res.png": "/mokdanbi_portfolio/static/media/project08_res.4bd8afa643ffe1f2740b.png",
+    "static/media/project06_res.png": "/mokdanbi_portfolio/static/media/project06_res.07e1edf8ec28d7a40916.png",
+    "static/media/project07_res.png": "/mokdanbi_portfolio/static/media/project07_res.a7ca059aeb0954a6f374.png",
+    "static/media/project05_res.png": "/mokdanbi_portfolio/static/media/project05_res.95cea9476c090fd3d96b.png",
     "index.html": "/mokdanbi_portfolio/index.html",
-    "main.6ce377c5.css.map": "/mokdanbi_portfolio/static/css/main.6ce377c5.css.map",
-    "main.fdcac57d.js.map": "/mokdanbi_portfolio/static/js/main.fdcac57d.js.map"
+    "main.19c69709.css.map": "/mokdanbi_portfolio/static/css/main.19c69709.css.map",
+    "main.8b7e2014.js.map": "/mokdanbi_portfolio/static/js/main.8b7e2014.js.map"
   },
   "entrypoints": [
-    "static/css/main.6ce377c5.css",
-    "static/js/main.fdcac57d.js"
+    "static/css/main.19c69709.css",
+    "static/js/main.8b7e2014.js"
   ]
 }
