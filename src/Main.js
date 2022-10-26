@@ -1,7 +1,7 @@
 import ReactFullpage from '@fullpage/react-fullpage'
 import React, { useEffect, useRef, useState } from 'react'
 import { portfolio } from './Data';
-import { GrCertificate, GrCursor, GrOrganization, GrPerformance, GrPower, GrToast, GrTools, GrUserFemale } from 'react-icons/gr';
+import { GrCertificate, GrCursor, GrPerformance, GrPower, GrToast, GrTools, GrUserFemale } from 'react-icons/gr';
 import { Animated } from "react-animated-css";
 import './Main.scss';
 import './Tablet.scss';
@@ -166,6 +166,7 @@ const Main = () => {
                               </a>
                             </div>
                             <ul>
+                              <li><span>TOOL</span>{it.tool}</li>
                               <li><span>SKILL</span>{it.skill}</li>
                               <li><span>FONT</span>{it.font}</li>
                               <li><span>COLOR</span>
