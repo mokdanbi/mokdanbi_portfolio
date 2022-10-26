@@ -1,8 +1,108 @@
 @media (max-width: 768px) {
   .Cover {
     ul {
+      width: 100%;
+      max-width: 768px;
+      min-width: 414px;
+
       >li {
-        width: 450px;
+
+        a {
+          position: relative;
+          display: block;
+          padding: 20px 0 20px 5%;
+          margin-left: 30%;
+          border-left: 1px dashed #ddd;
+        }
+
+        span {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          right: 5%;
+          font-size: 13px;
+          font-weight: 800;
+        }
+
+        &:nth-child(1) {
+          position: relative;
+
+          &::before {
+            content: "Intro";
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 5%;
+            width: 30%;
+            font-size: 14px;
+            font-weight: 600;
+            color: #5894cc;
+          }
+        }
+
+        &:nth-child(2) {
+          position: relative;
+
+          &::before {
+            content: "Standard Web";
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 5%;
+            width: 30%;
+            font-size: 14px;
+            font-weight: 600;
+            color: #5894cc;
+          }
+        }
+
+        &:nth-child(5) {
+          position: relative;
+
+          &::before {
+            content: "Responsive Web";
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 5%;
+            width: 30%;
+            font-size: 14px;
+            font-weight: 600;
+            color: #5894cc;
+          }
+        }
+
+        &:nth-child(9) {
+          position: relative;
+
+          &::before {
+            content: "React Web";
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 5%;
+            width: 30%;
+            font-size: 14px;
+            font-weight: 600;
+            color: #5894cc;
+          }
+        }
+
+        &:nth-child(11) {
+          position: relative;
+
+          &::before {
+            content: "Outro";
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 5%;
+            width: 30%;
+            font-size: 14px;
+            font-weight: 600;
+            color: #5894cc;
+          }
+        }
       }
     }
   }
@@ -235,7 +335,6 @@
         left: 50%;
         transform: translate(-50%, -50%);
         width: 80%;
-        min-width: 80%;
         height: 80%;
         border-radius: 30px;
         border: 5px solid #fff;
@@ -245,81 +344,87 @@
     }
 
     .desc {
+      flex: 1;
+      width: 100%;
+      height: 80%;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      flex: 1;
-      height: 560px;
       margin: auto 0;
-
+  
       >div {
-        padding: 0 50px;
+        // padding-left: 70px;
+        width: 80%;
+        margin: 0 auto;
       }
-
+  
       strong {
         display: inline-block;
         background: #333;
         color: #fff;
         font-size: 1.3rem;
         font-weight: 500;
-        padding: 7px 15px 5px;
-        margin: 0 0 1.5rem 0;
+        padding: 5px 13px;
+        margin: 0 0 1rem 0;
       }
-
+  
       h2 {
-        font-size: 4rem;
+        font-size: 3.5rem;
         font-weight: 800;
-        margin: 0 0 2rem 0;
+        margin: 0 0 3rem 0;
       }
 
       p {
-        font-size: 1.5rem;
-      }
-
-      .view {
         font-size: 1.4rem;
+      }
+  
+      .view {
+        font-size: 1.3rem;
         color: #666;
-
+  
         a {
-          padding: 10px 20px;
+          display: inline-block;
+          padding: 8px 15px;
           border: 1px dashed #666;
+          white-space: nowrap;
         }
-
+  
         :hover {
           background: #666;
           color: #fff;
           transition: 0.3s;
         }
       }
-
+  
       >ul {
-
+  
         >li {
-          line-height: 50px;
+          // line-height: 50px;
+          padding: 1.2rem 10%;
           border-bottom: 1px dashed #ddd;
-
+          font-size: 1.4rem;
+  
           &:first-child {
             border-top: 1px dashed #ddd;
           }
-
+  
           span {
             display: inline-block;
-            margin: 0 0 0 50px;
-            font-size: 18px;
+            // margin: 0 0 0 70px;
+            font-size: 1.5rem;
             font-weight: 700;
-            min-width: 100px;
+            min-width: 80px;
           }
-
+  
           ol {
             display: inline-block;
-
+  
             li {
               display: inline-block;
-              width: 25px;
-              height: 25px;
+              width: 40px;
+              height: 13px;
               vertical-align: middle;
-              border-radius: 50%;
-              margin-right: 15px;
+              margin-right: 1px;
               font-size: 0;
               border: 1px solid #ddd;
             }
@@ -368,63 +473,62 @@
 
       .profile {
         display: flex;
-        flex: 2;
-        gap: 2rem;
+        flex: auto;
+        gap: 0;
         margin: auto 0;
         justify-content: center;
         text-align: center;
-        padding: 2rem;
 
-        ul {
+        table {
           width: 100%;
+          height: 90%;
 
-          li {
+          .tpline {
+            border-top: 1px dashed #ddd;
+          }
 
-            .ft {
-              min-height: 15rem;
-              margin: 0 0 2rem 0;
+          th {
+            width: 50%;
+            font-size: 1.8rem;
+            padding: 1rem;
+
+            span {
+              display: inline-block;
+              font-size: 2rem;
+              padding-left: 1rem;
             }
+          }
 
-            .lt {
-              min-height: 28rem;
-            }
+          td {
+            width: 50%;
+            line-height: 1.25;
+            padding:1rem;
+            font-size: 1.4rem;
+          }
 
-            dl {
-              width: 100%;
-              border: 1px dashed #ddd;
-              padding: 1rem;
-              margin: 0;
-
-              dt {
-                font-size: 2.6rem;
-                font-weight: 600;
-                margin: 0 0 1.5rem 0;
-                padding-bottom: 1rem;
-                border-bottom: 1px dashed #ddd;
-              }
-
-              dd {
-                font-size: 1.8rem;
-                line-height: 1.25;
-              }
+          th,
+          td {
+            &:first-child {
+              border-right: 1px dashed #ddd;
             }
           }
         }
       }
 
       .danbi {
-        position: relative;
+        position: static;
+        flex: inherit;
         top: 0;
         left: 0;
-        flex: 1;
         height: auto;
         border-left: none;
+        padding: 3rem 0;
 
         .dbtxt {
-          position: absolute;
+          position: static;
           top: 50%;
           left: 50%;
-          transform: translate(-50%, -50%);
+          transform: translate(0);
           border-top: 1px dashed #ddd;
           border-bottom: 1px dashed #ddd;
           padding: 2rem 0;
